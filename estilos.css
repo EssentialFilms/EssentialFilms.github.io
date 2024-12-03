@@ -1,0 +1,237 @@
+/* Estilo general del cuerpo */
+body {
+  background-color: #343a40; /* Fondo oscuro */
+  color: white; /* Color del texto */
+  font-family: Arial, sans-serif; /* Fuente general */
+}
+
+header {
+  background-color: #5a2e91;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
+  width: 50px; /* Ajusta este valor según el tamaño de fuente del h1 */
+  height: auto;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item3 {
+  height: 50px;
+  width: 50px;
+}
+.header-title {
+  font-size: 2em; /* Asegúrate de que coincida con el tamaño de tu h1 */
+  color: white;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  background-color: #000000; /* Color negro para la barra de navegación */
+}
+
+/* Estilo para los enlaces en la barra de navegación */
+.nav-link {
+  color: white; /* Color del texto de los enlaces */
+}
+
+.nav-link:hover {
+  color: #ffff; /* Color al pasar el ratón sobre los enlaces */
+}
+
+/* Estilo para el carrusel */
+.carousel-inner {
+  max-height: 80%; /* Altura máxima de las imágenes del carrusel */
+  object-fit: cover; /* Ajustar la imagen sin deformar */
+}
+
+/* Estilo para la galería de imágenes */
+.image-gallery {
+  flex-wrap: wrap; /* Permitir que las imágenes se ajusten en varias filas si es necesario */
+}
+
+.image-link {
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  text-align: center; /* Centrar el texto debajo de la imagen */
+  color: white; /* Color del texto */
+}
+
+.image-link:hover .image-caption {
+  display: block; /* Mostrar la descripción al pasar el mouse */
+}
+
+.image-caption {
+  display: none; /* Ocultar la descripción por defecto */
+  margin-top: 5px; /* Espaciado superior */
+}
+
+/* Estilo para las imágenes en la galería */
+.img-thumbnail {
+  width: 500px; /* Ancho fijo para las imágenes */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #5a2e91; /* Color morado oscuro */
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar texto en el pie de página */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+/* Estilo para los botones en la barra de búsqueda */
+.btn-outline-success {
+  color: #5a2e91; /* Color del texto del botón de búsqueda */
+}
+
+.btn-outline-success:hover {
+  background-color: #5a2e91; /* Color de fondo al pasar el ratón sobre el botón */
+  color: white; /* Color del texto al pasar el ratón sobre el botón */
+}
+
+/* Estilo adicional para main (si es necesario)*/
+main {
+  background-color: black;
+}
+.foto1 {
+  width: 150px;
+  height: auto;
+}
+.foto2 {
+  width: 150px;
+  height: auto;
+}
+.foto3 {
+  width: 150px;
+  height: auto;
+}
+.foto4 {
+  width: 150px;
+  height: auto;
+}
+.foto5 {
+  width: 150px;
+  height: auto;
+}
+/* Estilo para el pie de página */
+footer {
+  background-color: #5a2e91; /* Color morado oscuro */
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar texto en el pie de página */
+  padding: 20px 0; /* Espaciado interno */
+}
+
+/* Estilo para los enlaces del footer */
+.footer-links {
+  display: flex; /* Usar flexbox para alinear las columnas */
+  justify-content: space-around; /* Espacio uniforme entre columnas */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.footer-column {
+  flex: 1; /* Cada columna ocupa el mismo espacio */
+  text-align: left; /* Alinear texto a la izquierda dentro de la columna */
+}
+
+.footer-link {
+  color: white; /* Color del texto del enlace */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  display: block; /* Hacer que cada enlace ocupe toda la línea */
+  margin: 5px 0; /* Espaciado vertical entre enlaces */
+}
+
+.footer-link:hover {
+  color: #d1d1d1; /* Color al pasar el ratón sobre los enlaces */
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9; /* Color de fondo suave */
+}
+
+h1 {
+  color: #ffff; /* Color del título */
+  text-align: center; /* Centrar el título */
+}
+
+h2 {
+  color: #333; /* Color del subtítulo */
+}
+
+/* Estilo para los contenedores de PDF */
+.pdf-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc; /* Borde alrededor del contenedor */
+  background-color: white; /* Fondo blanco para el contenedor */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los iframes que muestran los PDFs */
+.pdf-frame {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 350px; /* Altura pequeña para la vista previa */
+  border: 1px solid #ccc; /* Borde alrededor del iframe */
+}
+
+.icon-link {
+  color: #ffff; /* Color del ícono */
+  font-size: 1.5em; /* Tamaño del ícono */
+  margin-left: 1050px; /* Espaciado entre íconos */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.icon-link:hover {
+  color: #333; /* Cambiar color al pasar el mouse */
+}
+
+/* estilos.css */
+
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9; /* Color de fondo suave */
+}
+
+/* Estilo para el contenedor principal */
+main {
+  text-align: center; /* Centrar el texto del título */
+}
+
+/* Estilo para el contenedor de imágenes */
+.image-container {
+  width: 20%; /* Ancho de cada contenedor (ajustar según sea necesario) */
+  margin: 10px; /* Espacio entre contenedores */
+}
+
+/* Estilo para las miniaturas de video */
+.video-thumbnail {
+  width: 100%; /* Ancho completo del contenedor */
+  height: auto; /* Mantener proporción */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Estilo para la sinopsis */
+.synopsis {
+  margin-top: 5px; /* Espacio superior entre imagen y sinopsis */
+  font-size: 0.85em; /* Tamaño de fuente para la sinopsis */
+}
+
+/* Estilo para el título principal */
+h2 {
+  margin-bottom: 20px; /* Espacio inferior del título */
+}

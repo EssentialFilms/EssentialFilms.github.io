@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Films</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Vinculación de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-image d-flex align-items-center">
+        <img src="Imagenes/ESSENTIAL FLIMS LOGO.jpg" alt="Logo Essential Films" style="width: 6em; height: auto; margin-right: 10px;" />
+        <h1 class="text-start">Essential Films</h1>
+        <div class="icons ms-auto">
+          <!-- 'ms-auto' para empujar los íconos a la derecha -->
+          
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guiones.html">Guiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cortos.html" role="button"> Cortos </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Carrusel -->
+    <main class="d-flex flex-column align-items-center p-4">
+      <div id="carouselExampleCaptions" class="carousel slide" style="max-width: 600px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imagenes/amorh.jpg" class="d-block w-100" alt="Primera Imagen">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>AMOR</h5>
+              <p>DISFRUTALO YA EN ESSENTIAL FILMS</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagenes/enfrente.jpg" class="d-block w-100" alt="Segunda Imagen">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DONDE?</h5>
+              <p>DISFRUTALO YA EN ESSENTIAL FILMS</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+    </main>
+    <!-- Pie de página -->
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center p-4">
+      <div class="footer-links d-flex justify-content-around">
+        <div class="footer-column">
+          <a href="#" class="footer-link">Trabajos</a>
+          <a href="#" class="footer-link">Sobre Nosotros</a>
+          <a href="#" class="footer-link">Servicios</a>
+        </div>
+        <div class="footer-column">
+          <a href="#" class="footer-link">Proyectos</a>
+          <a href="#" class="footer-link">Testimonios</a>
+          <a href="#" class="footer-link">Blog</a>
+        </div>
+        <div class="footer-column">
+          <a href="#" class="footer-link">Contacto</a>
+          <a href="#" class="footer-link">Política de Privacidad</a>
+          <a href="#" class="footer-link">Términos y Condiciones</a>
+        </div>
+      </div>
+      <p>&copy; 2024 Essential Films. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Vinculación de Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

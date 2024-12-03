@@ -1,0 +1,177 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Films</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Vinculación de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <header>
+    <div class="header-image d-flex align-items-center">
+        <img src="Imagenes/ESSENTIAL FLIMS LOGO.jpg" alt="Logo Essential Films"style="width: 6em; height: auto; margin-right: 10px;" />
+        <h1 class="text-start">Essential Films</h1>
+        <div class="icons ms-auto"> <!-- 'ms-auto' para empujar los íconos a la derecha -->
+            <a href="#" class="icon-link" title="Perfil"><i class="fas fa-user"></i></a>
+            <a href="#" class="icon-link" title="Notificaciones"><i class="fas fa-bell"></i></a>
+        </div>
+    </div>
+</header>
+    <!-- Navegación -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guiones.html">Guiones</a> <!-- Hipervínculo agregado aquí -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" role="button"> Cortos </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<main>
+    <h2 class="text-center">Cortos</h2>
+    <div class="d-flex justify-content-between">
+        <!-- Contenedor de imágenes -->
+        <div class="image-container">
+            <a href="reproductor1.html" class="image-link">
+                <img src="Imagenes/Amorv.jpg" alt="Video 1" class="video-thumbnail">
+            </a>
+            <p class="synopsis">Un chico lucha por olvidar a su ex pareja mientras enfrenta los recuerdos que lo atan al pasado. En el proceso, descubre lecciones sobre el amor, la pérdida y la importancia de encontrarse a sí mismo.</p>
+        </div>
+
+        <div class="image-container">
+            <a href="reproductor2.html" class="image-link">
+                <img src="Imagenes/sextov.jpeg" alt="Video 2" class="video-thumbnail">
+            </a>
+            <p class="synopsis">Un misterio en el sexto piso de la Uniminuto despierta la curiosidad de un grupo de investigadores, llevándolos a descubrir secretos que pondrán a prueba su lógica y su valentía.</p>
+        </div>
+
+        <div class="image-container">
+            <a href="reproductor3.html" class="image-link">
+                <img src="Imagenes/atras.jpg" alt="Video 3" class="video-thumbnail">
+            </a>
+            <p class="synopsis">Un detective conocido por nunca perder un caso se enfrenta al secuestro de una persona clave, descubriendo un misterio más profundo que pone todo en juego.</p>
+        </div>
+    </div>
+    <main>
+    <h2 class="text-center">Galería de Videos</h2>
+<div class="d-flex justify-content-center flex-wrap">
+    <div class="image-container">
+        <a href="#" onclick="openVideo('https://www.youtube.com/embed/yuVrdBhtC8M')">
+            <img src="Imagenes/amorh.jpg" alt="Video 1" class="video-thumbnail" width="300">
+        </a>
+    </div>
+
+    <div class="image-container">
+        <a href="#" onclick="openVideo('https://www.youtube.com/embed/wP4D1schrsE')">
+            <img src="Imagenes/sextoh.jpeg" alt="Video 2" class="video-thumbnail" width="300">
+        </a>
+    </div>
+
+    <div class="image-container">
+        <a href="#" onclick="openVideo('https://www.youtube.com/embed/w8THNPFkW4o')">
+            <img src="Imagenes/enfrente.jpg" alt="Video 3" class="video-thumbnail" width="300">
+        </a>
+    </div>
+</div>
+
+<!-- Modal para el reproductor de video -->
+<div id="videoModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Reproductor de Video</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeVideo()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe id="videoFrame" width="100%" height="400px" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Función para abrir el video en el modal
+function openVideo(videoUrl) {
+    document.getElementById('videoFrame').src = videoUrl; // Establecer la URL del video
+    $('#videoModal').modal('show'); // Mostrar el modal (requiere jQuery y Bootstrap JS)
+}
+
+// Función para cerrar el video
+function closeVideo() {
+    document.getElementById('videoFrame').src = ""; // Limpiar la URL del video al cerrar
+}
+</script>
+
+<style>
+.image-container {
+    margin: 15px;
+}
+.video-thumbnail {
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+</style>
+</script>
+
+<!-- Asegúrate de incluir jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</main>
+
+
+
+
+
+
+
+
+<footer>
+        <footer class="bg-dark text-white text-center p-4">
+          <div class="footer-links d-flex justify-content-around">
+            <div class="footer-column">
+              <a href="#" class="footer-link">Trabajos</a>
+              <a href="#" class="footer-link">Sobre Nosotros</a>
+              <a href="#" class="footer-link">Servicios</a>
+            </div>
+            <div class="footer-column">
+              <a href="#" class="footer-link">Proyectos</a>
+              <a href="#" class="footer-link">Testimonios</a>
+              <a href="#" class="footer-link">Blog</a>
+            </div>
+            <div class="footer-column">
+              <a href="#" class="footer-link">Contacto</a>
+              <a href="#" class="footer-link">Política de Privacidad</a>
+              <a href="#" class="footer-link">Términos y Condiciones</a>
+            </div>
+          </div>
+          <p>&copy; 2024 Essential Films. Todos los derechos reservados.</p>
+        </footer>
+        <!-- Vinculación de Bootstrap JS y dependencias -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
